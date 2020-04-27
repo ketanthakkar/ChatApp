@@ -54,4 +54,4 @@ To run the tests:
 ```
 Browse to [http://localhost:8000](http://localhost:8000) and see the running app. 
 
-To test, open it in two different browsers. (Or one of it in incognito mode). 
+To test, open it in two different browsers. (Or one of it in incognito mode). Send message from one window you can see in another window. In setting Tab you can change application settings.
