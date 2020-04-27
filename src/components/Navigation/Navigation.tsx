@@ -7,7 +7,7 @@ import { faCog, faComment } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
 import { withTranslations } from '../../utilities/withTranslations';
-import UnreadMessagesCounter from '../UnreadMessagesCounter/UnreadMessageCounter';
+import UnreadMessagesCounter from './UnreadMessagesCounter/UnreadMessageCounter';
 import { IAppContext } from '../../utilities/TranslationsProvider';
 import { IMessage } from '../Message/Message';
 import { isPageActive } from '../../utilities/common';
@@ -29,6 +29,7 @@ interface INavState {
   receivedUnreadMessages: IMessage[];
 }
 
+/* Navigation component for select different page */
 export class Navigation extends React.Component<INavProps, INavState> {
   constructor(props: INavProps) {
     super(props);

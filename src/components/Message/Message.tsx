@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Emojify from 'react-emojione';
 import StyledMessage from './StyledMessage';
-import Nickname from '../Nickname';
-import Timestamp from '../Timestamp';
+import Nickname from './Nickname';
+import Timestamp from './Timestamp';
 import MicrolinkCard from '@microlink/react';
 import Linkify from 'linkifyjs/react';
 import * as getUrls from 'get-urls';
@@ -14,6 +14,7 @@ export interface IMessage {
   type: string;
 }
 
+/* Message component with chat content like message, time, username */
 class Message extends React.Component<{ message: IMessage }> {
   public render() {
     const { message } = this.props;

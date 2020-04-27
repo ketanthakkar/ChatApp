@@ -2,7 +2,7 @@ import { SEND_MESSAGE_RESPONSE, MESSAGE_SENT, USER_CHANGED } from '../actions';
 import { readRecord } from '../../../utilities/localStorageService';
 
 const INITIAL_STATE = {
-  username: readRecord('username') || 'guest0001',
+  username: readRecord('username') || [...Array(10)].map(() => Math.random().toString(36)[2]).join(''),
   messages: []
 };
 
